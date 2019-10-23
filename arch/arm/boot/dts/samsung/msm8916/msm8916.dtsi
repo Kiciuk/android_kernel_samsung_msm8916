@@ -25,7 +25,7 @@
 	interrupt-parent = <&intc>;
 
 	chosen {
-		bootargs = "sched_enable_hmp=1";
+		bootargs = "sched_enable_hmp=1 androidboot.hardware=qcom androidboot.bootdevice=7824900.sdhci";
 	};
 
 	aliases {
