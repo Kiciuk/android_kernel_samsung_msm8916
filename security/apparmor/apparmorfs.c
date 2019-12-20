@@ -387,7 +387,7 @@ static int seq_show_profile(struct seq_file *f, void *p)
 	return 0;
 }
 
-+static const struct seq_operations aa_fs_profiles_op = {
+static const struct seq_operations aa_fs_profiles_op = {
 	.start = p_start,
 	.next = p_next,
 	.stop = p_stop,
