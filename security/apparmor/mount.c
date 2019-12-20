@@ -204,9 +204,9 @@ static unsigned int match_mnt_flags(struct aa_dfa *dfa, unsigned int state,
 {
 	unsigned int i;
 
-	for (i = 0; i <= 31 ; i) {
+	for (i = 0; i <= 31 ; ++i) {
 		if ((1 << i) & flags)
-			state = aa_dfa_next(dfa, state, i  1);
+			state = aa_dfa_next(dfa, state, i + 1);
 	}
 
 	return state;
